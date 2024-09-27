@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Gap Analysis</title>
+
+    <!-- Bootstrap 5 CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Select2 CSS for searchable dropdown -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+    <style>
+        .form-section {
+            margin-bottom: 2rem;
+        }
+        .select2-container--default .select2-selection--single {
+            height: 38px;
+            padding: 6px 12px;
+        }
+        .form-control {
+            padding: 12px;
+        }
+        .slider-container {
+            margin-bottom: 20px;
+        }
+        .slider-container .label {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            margin-top: 5px;
+        }
+        .range-output {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Skill Gap Analysis</h1>
+
+        <div class="card shadow p-4">
+            <!-- Form Start -->
+            <form method="POST" id="skill-gap-form">
+                <!-- Job Role Selection -->
+                <div class="form-section">
+                    <label for="role" class="form-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Select your target job role for skill gap analysis.">Select Job Role</label>
+                    <select class="form-control select2" id="role" name="role" required>
+                        <option value="" disabled selected>Select your role</option>
+                        {% for role_option in roles %}
+                        <option value="{{ role_option }}" {% if role == role_option %}selected{% endif %}>{{ role_option }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <!-- Skills and Sliders for Proficiency -->
+                <!-- {% if required_skills %}
+                <div class="form-section">
+                    <h4 class="mb-3">Skills for {{ role }}</h4>
+                    {% for skill in required_skills %}
+                    <div class="slider-container">
+                        <label for="{{ skill }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Rate your proficiency in {{ skill }} (1 = Beginner, 3 = Expert).">{{ skill }}</label>
+                        <input type="range" class="form-range" id="slider-{{ skill }}" name="proficiencies" min="1" max="3" step="1" value="1" oninput="document.getElementById('output-{{ skill }}').innerHTML = this.value;">
+                        <div class="label">
+                            <span>Beginner</span>
+                            <span class="range-output" id="output-{{ skill }}">1</span>
+                            <span>Expert</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %} -->
+                <!-- Skills and Sliders for Proficiency -->
+                {% if required_skills %}
+                <div class="form-section">
+                    <h4 class="mb-3">Skills for {{ role }}</h4>
+                    {% for skill in required_skills %}
+                    <div class="slider-container">
+                        <label for="{{ skill }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Rate your proficiency in {{ skill }} (0 = No Proficiency, 3 = Expert).">{{ skill }}</label>
+                        <input type="range" class="form-range" id="slider-{{ skill }}" name="proficiencies" min="0" max="3" step="1" value="0" oninput="document.getElementById('output-{{ skill }}').innerHTML = this.value;">
+                        <div class="label">
+                            <span>Beginner</span>
+                            <span class="range-output" id="output-{{ skill }}">0</span>
+                            <span>Expert</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+        {% endif %}
+
+                <!-- Submit and Reset Buttons -->
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Analyze Skills</button>
+                    <button type="reset" class="btn btn-secondary btn-block mt-2">Reset Form</button>
+                </div>
+            </form>
+            <!-- Form End -->
+        </div>
+
+        {% if plot_url %}
+        <!-- Chart Section -->
+        <div class="mt-5">
+            <h2 class="text-center">Your Skill Gap Analysis Chart</h2>
+            <div class="text-center">
+                <img src="data:image/png;base64,{{ plot_url }}" alt="Skill Gap Analysis Chart" class="img-fluid">
+            </div>
+        </div>
+        {% endif %}
+
+        {% if plot_url_radar %}
+        <div class="mt-5">
+            <h2 class="text-center">Proficiency Gap Radar Chart</h2>
+            <div class="text-center">
+                <img src="data:image/png;base64,{{ plot_url_radar }}" alt="Proficiency Gap Radar Chart" class="img-fluid">
+            </div>
+        </div>
+        {% endif %}
+
+        {% if recommendations %}
+        <!-- Recommendations Section -->
+        <div class="mt-5">
+            <h2 class="text-center">Detailed Skill Comparison and Recommendations</h2>
+
+            <div class="mt-4">
+                <table class="table table-striped table-bordered mt-3">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Skill</th>
+                            <th>Gap</th>
+                            <th>Future Importance</th>
+                            <th>Recommendation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for recommendation in recommendations %}
+                        <tr>
+                            <td>{{ recommendation.Skill }}</td>
+                            <td>{{ recommendation.Gap }}</td>
+                            <td>{{ recommendation['Future Importance'] }}</td>
+                            <td>{{ recommendation.Recommendation }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Bootstrap 5 JS and Popper.js for tooltips -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Select2 JS for searchable dropdown -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <script>
+        // Initialize Select2 for searchable dropdown
+        $(document).ready(function() {
+            $('.select2').select2();
+        });
+
+        // Initialize Bootstrap tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+</html>
