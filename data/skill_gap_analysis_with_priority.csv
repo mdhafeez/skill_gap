@@ -1,0 +1,41 @@
+User ID,User Name,Job Role,Result
+1,User_1,Database Administrator,"Missing Skills (with Priority):
+- sql (Required Proficiency: 3, Priority: High Priority)
+- database optimization (Required Proficiency: 2, Priority: High Priority)
+- nosql (Required Proficiency: 2, Priority: High Priority)"
+2,User_2,Full Stack Developer,"Missing Skills (with Priority):
+- frontend development (react/angular) (Required Proficiency: 3, Priority: High Priority)
+- backend development (node.js) (Required Proficiency: 2, Priority: High Priority)
+- restful api development (Required Proficiency: 2, Priority: High Priority)"
+3,User_3,Software Engineer,"Missing Skills (with Priority):
+- java (Required Proficiency: 3, Priority: High Priority)
+- object-oriented programming (oop) (Required Proficiency: 3, Priority: High Priority)
+- design patterns (Required Proficiency: 2, Priority: High Priority)"
+4,User_4,QA Tester,"Missing Skills (with Priority):
+- manual testing (Required Proficiency: 1, Priority: High Priority)
+- test automation (Required Proficiency: 1, Priority: High Priority)
+- bug reporting (Required Proficiency: 1, Priority: High Priority)"
+5,User_5,Junior Web Developer,"Missing Skills (with Priority):
+- html/css (Required Proficiency: 1, Priority: High Priority)
+- basic javascript (Required Proficiency: 1, Priority: High Priority)
+- responsive design (Required Proficiency: 1, Priority: High Priority)"
+6,User_6,Cloud Engineer,"Missing Skills (with Priority):
+- aws (Required Proficiency: 3, Priority: High Priority)
+- microsoft azure (Required Proficiency: 2, Priority: High Priority)
+- cloud security (Required Proficiency: 2, Priority: High Priority)"
+7,User_7,Network Administrator,"Missing Skills (with Priority):
+- cisco networking (Required Proficiency: 3, Priority: High Priority)
+- network security (Required Proficiency: 2, Priority: High Priority)
+- vpn configuration (Required Proficiency: 2, Priority: High Priority)"
+8,User_8,Cloud Engineer,"Missing Skills (with Priority):
+- aws (Required Proficiency: 3, Priority: High Priority)
+- microsoft azure (Required Proficiency: 2, Priority: High Priority)
+- cloud security (Required Proficiency: 2, Priority: High Priority)"
+9,User_9,Security Analyst,"Missing Skills (with Priority):
+- threat detection (Required Proficiency: 3, Priority: High Priority)
+- penetration testing (Required Proficiency: 2, Priority: High Priority)
+- incident response (Required Proficiency: 2, Priority: High Priority)"
+10,User_10,Full Stack Developer,"Missing Skills (with Priority):
+- frontend development (react/angular) (Required Proficiency: 3, Priority: High Priority)
+- backend development (node.js) (Required Proficiency: 2, Priority: High Priority)
+- restful api development (Required Proficiency: 2, Priority: High Priority)"
