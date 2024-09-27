@@ -8,4 +8,5 @@ spacy         # alternative to nltk for NLP (optional)
 gunicorn      # Optional: For production deployment of the Flask app
 matplotlib
 numpy
-
+whitenoise
+markdown
