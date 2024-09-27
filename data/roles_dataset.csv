@@ -1,0 +1,67 @@
+Role_ID,Role_Name,Subdomain,Skill_ID,Skill_Name,Skill_Level,Future_Skill_Importance,Industry,Years_of_Experience,Skill_Category,Certification_Required,Source_of_Skill_Requirement
+1,Data Scientist,AI & Data,101,Python,Expert,High,Technology,3-5 years,Technical,Yes,Industry Survey
+1,Data Scientist,AI & Data,102,Machine Learning,Intermediate,High,Technology,2-3 years,Technical,Yes,Job Postings
+1,Data Scientist,AI & Data,103,Data Visualization,Intermediate,Medium,Technology,2-3 years,Technical,No,Internal Reports
+2,Project Manager,Management,201,Communication,Expert,High,Management,5+ years,Soft Skill,No,Industry Survey
+2,Project Manager,Management,202,Risk Management,Intermediate,High,Management,3-5 years,Technical,Yes,Certification Guidelines
+2,Project Manager,Management,203,Budgeting,Intermediate,Medium,Management,3-5 years,Technical,No,Job Postings
+3,Web Developer,IT & Software,301,JavaScript,Expert,High,Technology,2-3 years,Technical,No,Industry Survey
+3,Web Developer,IT & Software,302,HTML/CSS,Intermediate,Medium,Technology,1-2 years,Technical,No,Job Postings
+3,Web Developer,IT & Software,303,Version Control,Intermediate,High,Technology,1-2 years,Technical,No,Internal Reports
+4,Cybersecurity Analyst,IT & Security,401,Network Security,Expert,High,Cybersecurity,3-5 years,Technical,Yes,Industry Survey
+4,Cybersecurity Analyst,IT & Security,402,Ethical Hacking,Intermediate,High,Cybersecurity,2-3 years,Technical,Yes,Certification Guidelines
+4,Cybersecurity Analyst,IT & Security,403,Cryptography,Intermediate,Medium,Cybersecurity,2-3 years,Technical,No,Job Postings
+5,Marketing Manager,Marketing,501,Digital Marketing,Expert,High,Marketing,3-5 years,Technical,No,Industry Survey
+5,Marketing Manager,Marketing,502,SEO Optimization,Intermediate,High,Marketing,2-3 years,Technical,No,Job Postings
+5,Marketing Manager,Marketing,503,Content Strategy,Intermediate,Medium,Marketing,2-3 years,Soft Skill,No,Internal Reports
+6,Financial Analyst,Finance,601,Financial Modeling,Expert,High,Finance,3-5 years,Technical,Yes,Certification Guidelines
+6,Financial Analyst,Finance,602,Risk Analysis,Intermediate,High,Finance,3-5 years,Technical,Yes,Industry Survey
+6,Financial Analyst,Finance,603,Data Analysis,Intermediate,Medium,Finance,2-3 years,Technical,No,Job Postings
+7,Healthcare Specialist,Healthcare,701,Patient Care,Expert,High,Healthcare,5+ years,Soft Skill,Yes,Industry Survey
+7,Healthcare Specialist,Healthcare,702,Medical Diagnosis,Intermediate,High,Healthcare,3-5 years,Technical,Yes,Certification Guidelines
+7,Healthcare Specialist,Healthcare,703,Health Data Management,Intermediate,Medium,Healthcare,2-3 years,Technical,Yes,Job Postings
+8,Product Manager,Product Management,801,Product Strategy,Expert,High,Management,5+ years,Soft Skill,No,Industry Survey
+8,Product Manager,Product Management,802,Agile Methodologies,Intermediate,High,Management,3-5 years,Technical,Yes,Job Postings
+8,Product Manager,Product Management,803,User Experience (UX),Intermediate,Medium,Management,2-3 years,Technical,No,Internal Reports
+9,HR Specialist,Human Resources,901,Talent Acquisition,Expert,High,HR,3-5 years,Soft Skill,No,Job Postings
+9,HR Specialist,Human Resources,902,Employee Relations,Intermediate,High,HR,3-5 years,Soft Skill,No,Industry Survey
+9,HR Specialist,Human Resources,903,Organizational Behavior,Intermediate,Medium,HR,2-3 years,Soft Skill,No,Internal Reports
+10,Sales Executive,Sales & Business,1001,Negotiation Skills,Expert,High,Sales,3-5 years,Soft Skill,No,Job Postings
+10,Sales Executive,Sales & Business,1002,CRM Software,Intermediate,High,Sales,2-3 years,Technical,No,Industry Survey
+10,Sales Executive,Sales & Business,1003,Market Analysis,Intermediate,Medium,Sales,2-3 years,Technical,No,Internal Reports
+11,Software Engineer,Software Development,1101,Java,Expert,High,Technology,3-5 years,Technical,No,Job Postings
+11,Software Engineer,Software Development,1102,Object-Oriented Programming (OOP),Expert,High,Technology,3-5 years,Technical,No,Industry Survey
+11,Software Engineer,Software Development,1103,Design Patterns,Intermediate,Medium,Technology,2-3 years,Technical,No,Internal Reports
+12,Cloud Engineer,Cloud Computing,1201,AWS,Expert,High,Cloud Computing,3-5 years,Technical,Yes,Certification Guidelines
+12,Cloud Engineer,Cloud Computing,1202,Microsoft Azure,Intermediate,High,Cloud Computing,2-3 years,Technical,Yes,Job Postings
+12,Cloud Engineer,Cloud Computing,1203,Cloud Security,Intermediate,High,Cloud Computing,2-3 years,Technical,Yes,Industry Survey
+13,DevOps Engineer,DevOps,1301,CI/CD Pipeline,Expert,High,DevOps,3-5 years,Technical,No,Job Postings
+13,DevOps Engineer,DevOps,1302,Docker,Expert,High,DevOps,3-5 years,Technical,No,Internal Reports
+13,DevOps Engineer,DevOps,1303,Kubernetes,Intermediate,High,DevOps,2-3 years,Technical,No,Industry Survey
+14,Network Administrator,IT & Networking,1401,Cisco Networking,Expert,High,Networking,3-5 years,Technical,Yes,Certification Guidelines
+14,Network Administrator,IT & Networking,1402,Network Security,Intermediate,High,Networking,2-3 years,Technical,Yes,Job Postings
+14,Network Administrator,IT & Networking,1403,VPN Configuration,Intermediate,Medium,Networking,2-3 years,Technical,No,Internal Reports
+15,Database Administrator,Database Management,1501,SQL,Expert,High,Database,3-5 years,Technical,No,Industry Survey
+15,Database Administrator,Database Management,1502,Database Optimization,Intermediate,High,Database,2-3 years,Technical,No,Job Postings
+15,Database Administrator,Database Management,1503,NoSQL,Intermediate,High,Database,2-3 years,Technical,No,Internal Reports
+16,Security Analyst,Cybersecurity,1601,Threat Detection,Expert,High,Cybersecurity,3-5 years,Technical,Yes,Certification Guidelines
+16,Security Analyst,Cybersecurity,1602,Penetration Testing,Intermediate,High,Cybersecurity,2-3 years,Technical,Yes,Job Postings
+16,Security Analyst,Cybersecurity,1603,Incident Response,Intermediate,High,Cybersecurity,2-3 years,Technical,No,Internal Reports
+17,AI Engineer,AI & Machine Learning,1701,TensorFlow,Expert,High,AI & Data,2-3 years,Technical,No,Job Postings
+17,AI Engineer,AI & Machine Learning,1702,Natural Language Processing,Intermediate,High,AI & Data,3-5 years,Technical,No,Industry Survey
+17,AI Engineer,AI & Machine Learning,1703,Deep Learning,Expert,High,AI & Data,3-5 years,Technical,No,Internal Reports
+18,Full Stack Developer,Software Development,1801,Frontend Development (React/Angular),Expert,High,Technology,3-5 years,Technical,No,Job Postings
+18,Full Stack Developer,Software Development,1802,Backend Development (Node.js),Intermediate,High,Technology,2-3 years,Technical,No,Internal Reports
+18,Full Stack Developer,Software Development,1803,RESTful API Development,Intermediate,High,Technology,2-3 years,Technical,No,Industry Survey
+19,Junior Software Developer,Software Development,1901,Basic Java Programming,Beginner,High,Technology,0-1 years,Technical,No,Job Postings
+19,Junior Software Developer,Software Development,1902,Version Control (Git),Beginner,Medium,Technology,0-1 years,Technical,No,Internal Reports
+19,Junior Software Developer,Software Development,1903,Debugging,Beginner,Medium,Technology,0-1 years,Technical,No,Industry Survey
+20,IT Support Specialist,IT & Support,2001,Troubleshooting,Expert,High,IT & Support,0-1 years,Technical,No,Job Postings
+20,IT Support Specialist,IT & Support,2002,Customer Support,Beginner,Medium,IT & Support,0-1 years,Soft Skill,No,Internal Reports
+20,IT Support Specialist,IT & Support,2003,Hardware Configuration,Intermediate,Low,IT & Support,0-1 years,Technical,No,Industry Survey
+21,QA Tester,Quality Assurance,2101,Manual Testing,Beginner,High,Technology,0-1 years,Technical,No,Job Postings
+21,QA Tester,Quality Assurance,2102,Test Automation,Beginner,High,Technology,0-1 years,Technical,No,Internal Reports
+21,QA Tester,Quality Assurance,2103,Bug Reporting,Beginner,Medium,Technology,0-1 years,Technical,No,Industry Survey
+22,Junior Web Developer,Web Development,2201,HTML/CSS,Beginner,High,Web Development,0-1 years,Technical,No,Job Postings
+22,Junior Web Developer,Web Development,2202,Basic JavaScript,Beginner,High,Web Development,0-1 years,Technical,No,Internal Reports
+22,Junior Web Developer,Web Development,2203,Responsive Design,Beginner,High,Web Development,0-1 years,Technical,No,Industry Survey
