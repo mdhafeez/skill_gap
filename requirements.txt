@@ -2,11 +2,10 @@ Flask
 pandas
 numpy
 scikit-learn
-tensorflow-cpu   # or torch if you prefer PyTorch
+tensorflow-cpu # or torch if you prefer PyTorch
 nltk          # for NLP tasks like resume parsing (optional)
 spacy         # alternative to nltk for NLP (optional)
 gunicorn      # Optional: For production deployment of the Flask app
 matplotlib
 numpy
-whitenoise
-markdown
+

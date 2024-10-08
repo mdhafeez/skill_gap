@@ -4,7 +4,6 @@ matplotlib.use('Agg')  # Use the non-interactive backend
 from flask import Flask, request, render_template
 import pandas as pd
 import matplotlib.pyplot as plt
-import os
 import io
 import base64
 import numpy as np
@@ -174,6 +173,7 @@ def home():
             return render_template(
                 'form_with_results.html',
                 plot_url=plot_url,  # Pass the plot URL to the HTML template
+                plot_url_radar=plot_url_radar,  # Pass the radar chart
                 role=role,
                 recommendations=recommendations_df.to_dict(orient='records'),
                 roles=roles_list
